@@ -231,7 +231,7 @@ input[type=text]{
     display: grid;
     grid-template-columns: auto auto auto;
 
-    margin-bottom:-16px;
+    
 }
 .todo-section{
     position: absolute;
