@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Seting.css">
+    
+    <title>Setting Workspace</title>
+</head>
+<body>
+    <div class="Setting-form-container">
+        <ul class="setting-titles-holder"> 
+            <li>
+                <button class="setting-title-button">
+                    <p class="setting-title bold">General</p>
+                </button>
+            </li>
+            <li>
+                <button class="setting-title-button">
+                    <p class="setting-title bold">Todo</p>
+                </button>
+            </li>
+            <li>
+                <button class="setting-title-button">
+                    <p class="setting-title bold">Mantras</p>
+                </button>
+            </li>
+            <li>
+                <button class="setting-title-button">
+                    <p class="setting-title bold">Photos</p>
+                </button>
+            </li>
+            <li>
+                <button class="setting-title-button">
+                    <p class="setting-title bold">Quotes</p>
+                </button>
+            </li>
+            <li>
+                <button class="setting-title-button">
+                    <p class="setting-title bold">Links & Bookmarks</p>
+                </button>
+            </li>
+            <li>
+                <button class="setting-title-button">
+                    <p class="setting-title bold">Balance</p>
+                </button>
+            </li>
+
+            <li>
+                <button class="setting-title-button">
+                    <p class="setting-title">take a tour</p>
+                </button>
+            </li>
+            <li>
+                <button class="setting-title-button">
+                    <p class="setting-title">Join a live Workshop</p>
+                </button>
+            </li>
+            <li>
+                <button class="setting-title-button">
+                    <p class="setting-title">Help</p>
+                </button>
+            </li>
+            <li>
+                <button class="setting-title-button">
+                    <p class="setting-title">About</p>
+                </button>
+            </li>
+            <li>
+                <button class="setting-title-button">
+                    <p class="setting-title">Upgrade to Plus</p>
+                </button>
+            </li>
+
+        </ul>
+        
+<!----------------------------------------- Details : General -------------------------------------------->
+
+
+        <div class="setting-items-details-holder">
+            <ul class="layer-1">
+                <li>
+                    <H4 class="setting-title33">General</H4>
+                    <p>customize your dashboard</p>
+                </li>
+                <li>
+                    <li>
+                        <h5>Show</h5>
+                    </li>
+                    <ul class="layer-2">
+                        
+                        <li>
+                           <button class="no-style setting-checkbox" >
+                                <p class="setting-item-btn-txt">links</p>
+                                <label class="switch">
+                                    <input id="ck" type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                           </button>
+                        </li>
+                        <li>
+                           <button class="no-style setting-checkbox">
+                                <p class="setting-item-btn-txt">bookmarks Bar</p>
+                                <label class="switch">
+                                    <input id="ck" type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                           </button>
+                        </li>
+                        <li>
+                           <button class="no-style setting-checkbox">
+                                <p class="setting-item-btn-txt">Top Sites</p>
+                                <label class="switch">
+                                    <input id="ck" type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                           </button>
+                        </li>
+                        <li>
+                           <button class="no-style setting-checkbox">
+                                <p class="setting-item-btn-txt">Search</p>
+                                <label class="switch">
+                                    <input id="ck" type="checkbox">
+                                    <span class="slider round"></span>
+                                </label>
+                           </button>
+                        </li>
+                    </ul>
+                    
+                </li>
+
+
+            </ul>
+        </div>
+        
+    </div>
+    <script>
+        const setting_buttons = document.getElementsByClassName("setting-checkbox");
+        for(let btn of setting_buttons){
+            btn.addEventListener("click", clickedtn)
+        }
+        function clickedtn(e){
+            if(e.target.tagName == "P"){
+                callme(e.target.parentElement.childNodes[3].childNodes[1]);
+            }
+            else if(e.target.tagName == "BUTTON"){
+                callme(e.target.childNodes[3].childNodes[1]);
+            }
+        }
+        function callme(checkox){
+            
+            if(checkox.checked == true)
+                checkox.checked = false;
+            else
+                checkox.checked = true;
+        }
+    </script>
+</body>
+</html>

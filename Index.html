@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="Index.js" type="module" defer></script> 
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <script type="module" src="./tc.js"></script>
+    <title>My Momentum</title>
+</head>
+<body >
+
+    <!-- Header -->
+    <div class = "header">
+        
+        <!--search-box--> 
+        
+        <ul  id="search-section"  class="  header-ul ">
+            <div class = "horizental-Items">
+                <i class="bi bi-arrow-up-right-square-fill" style="font-size: 18px ; margin: 6px;"></i>
+                <p class="no-margin  z-2" style="font-size: 14px;" >Links</p>
+            </div>
+            <div class="horizental-Items" id="kk" onmouseover="unhideSearch()" onfocus="ss()" onmouseleave="hideSearch()" style="position: absolute;  left: 60px; width:160px; height:35px; " >
+                <i data-feather="check" id = "ff" style=" position: absolute; right: 0;" class=" hover_visible"></i>
+                <hr  style="bottom: 0; width:160px ; margin-inline:auto; position: absolute; " class=" hover_visible">
+                <i class="no-margin" style="z-index: 100; position: absolute;" data-feather="search"></i>
+                <input  id="search_TxtBox" onfocusout="ss()" style=" border:none;  font-size:16px; background: none; padding: 0; margin-inline: 6px; position: absolute; top: 5px; left: 24px; width: 110px; " type="text">
+            </div>
+            
+            
+        </ul>
+
+        <!-- weather section-->
+        <ul class="margin-right-1 header-ul" id = "weather-section" >
+            <!-- Add section-->
+            <div class="horizental-Items">
+                <i  data-feather="plus-circle"></i>
+                <p >add</p>
+            </div>
+            <!-- weather section-->
+            <i class="horizental-Items" data-feather="sun"></i>
+            <ul class="margin-right-1 horizental-Items">
+                <h2 style="padding:1; margin: 1px;">Weather</h2>
+                <p>asa</p>
+            </ul>
+                
+        </ul>
+        
+    </div>
+
+    
+    <!-- Inner Items -->
+
+    <div  id="inner-section">
+        <div id="empty-ineer-sec" class="inner-Item ">
+            
+        </div>
+        <div class="inner-Item" style="width: 100%;">
+            <div id="clock-section" class="grid-3col" >
+                
+                    <div class="clock-section-Items clock-icon"><i class="bi bi-arrow-left-right"></i></i></div>
+                    <div class="clock-section-Items Clock"><p id="clock-num"></p></div>
+                    <div class="clock-section-Items clock-icon"><i class="bi bi-three-dots"></i></div>
+                
+            </div>
+            <!--Mantra-->
+            <p id="mantra-section" class="central-Items">Good after noon Mohammad</p>
+            <!--Main Focus Today-->
+            <div class="central-Items" id="main-focus-sec" >
+                <p id="main-focus-text" >Whats your main focus today?</p>
+                <input type="text" id="mft-txt" name="" id="">
+            </div>
+
+        </div>
+        
+       
+    </div>
+
+    <!-------------------------  Footer  ---------------------------->
+    <div class="footer-section">
+        <!-------  Settings  --------->
+        <div class="settings-div">
+            <button id="btn-setting-wheel"  class="settings-items  no-style-textbox">
+                <i class="bi bi-gear-fill setting-icon"></i>
+            </button>
+
+            <div class="stp_triangle setting-popover"> 
+
+            </div>
+            
+            <div class="Setting-form-container setting-popover">
+                <ul class="setting-titles-holder"> 
+                    <li>
+                        <button class="setting-title-button">
+                            <p class="setting-title bold">General</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="setting-title-button">
+                            <p class="setting-title bold">Todo</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="setting-title-button">
+                            <p class="setting-title bold">Mantras</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="setting-title-button">
+                            <p class="setting-title bold">Photos</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="setting-title-button">
+                            <p class="setting-title bold">Quotes</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="setting-title-button">
+                            <p class="setting-title bold">Links & Bookmarks</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="setting-title-button">
+                            <p class="setting-title bold">Balance</p>
+                        </button>
+                    </li>
+        
+                    <li>
+                        <button class="setting-title-button">
+                            <p class="setting-title">take a tour</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="setting-title-button">
+                            <p class="setting-title">Join a live Workshop</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="setting-title-button">
+                            <p class="setting-title">Help</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="setting-title-button">
+                            <p class="setting-title">About</p>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="setting-title-button">
+                            <p class="setting-title">Upgrade to Plus</p>
+                        </button>
+                    </li>
+        
+                </ul>
+                
+        <!----------------------------------------- Details : General -------------------------------------------->
+        
+        
+                <div class="setting-items-details-holder">
+                    <ul class="layer-1">
+                        <li>
+                            <H4 class="setting-title33">General</H4>
+                            <p>customize your dashboard</p>
+                        </li>
+                        <li>
+                            <li>
+                                <h5>Show</h5>
+                            </li>
+                            <ul class="layer-2">
+                                
+                                <li>
+                                   <button class="no-style setting-checkbox" >
+                                        <p class="setting-item-btn-txt">links</p>
+                                        <label class="switch">
+                                            <input id="ck" type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                   </button>
+                                </li>
+                                <li>
+                                   <button class="no-style setting-checkbox">
+                                        <p class="setting-item-btn-txt">bookmarks Bar</p>
+                                        <label class="switch">
+                                            <input id="ck" type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                   </button>
+                                </li>
+                                <li>
+                                   <button class="no-style setting-checkbox">
+                                        <p class="setting-item-btn-txt">Top Sites</p>
+                                        <label class="switch">
+                                            <input id="ck" type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                   </button>
+                                </li>
+                                <li>
+                                   <button class="no-style setting-checkbox">
+                                        <p class="setting-item-btn-txt">Search</p>
+                                        <label class="switch">
+                                            <input id="ck" type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                   </button>
+                                </li>
+                            </ul>
+                            
+                        </li>
+        
+        
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="picture-deatil setting-context">
+                <p class=" picture-name up-going-motion">
+                    Stunted Pine
+                </p>
+                <div class=" picture-owner down-going-motion">
+                    <p class="">
+                        Jyriki Salmi
+                    </p> 
+                    <i class="bi bi-heart "></i>
+                    <i class="bi bi-skip-end "></i>
+                    
+                </div>
+            </div>
+
+
+
+        </div>
+        <div >
+            <p class="">Ali2</p>
+        </div>
+
+
+
+        <div class="todo-section">
+            
+            <button class="todo-btn btn" onclick="open_todo_pop()">
+                Todo
+            </button>
+        </div>
+
+    </div>
+    <div class="todo_popover" >
+        <div class="tdp_item_holder"> 
+            <div class="popover-header">
+                <div class="left-top-form">
+                    <button id="all-todos-presenter"   class="btn-no-style todo-tl-btn">
+                        <p class="Item-list-btn-text">Today</p>
+                        <div class="Item-list-btn-text">
+                            <i id="todo-popover-tl-arrow" style="padding-top:1px;" class="bi bi-chevron-compact-down arrow-icon"></i>
+                    
+                        </div>
+                    </button>
+                    
+                    
+                    
+                </div>
+                <div class="rt-todo-form" >
+                    <button data-popover-target="my-popover" class="btn-no-style tr-btn" >
+                        <i class="bi bi-three-dots"></i>
+
+                    </button>
+                    
+                    
+                    
+                </div>
+                <!----Default Content-->
+                <ul id="all-todos" class="todos-headers-pop popovers" >
+                    <li class="popover-item">Inbox2</li>
+                    <li class="popover-item">Today</li>
+                    <li class="popover-item">Done</li>
+                    <li class="popover-item">+New List</li>
+                </ul>
+            </div>
+            
+            
+            <!------ 
+            <div  class="todo-main">
+                <div class="todo-main-item-holders ">
+
+                </div>
+                <p class="todo-center-item todo-main-item">No compeleted todos yet</p>
+                <button class="todo-center-item btn-no-style todo-main-item todo-nextoption-btn">
+                    <p class="todo-btn-inner todo-btn-get-start">Get Started in Today</p>
+                </button>
+                <div class="todo-center-item todo-main-item">
+                    <button class=" todo-btn-New ">
+                        <p  class="todo-btn-inner todo-btn-inner-newTodo">New Todo</p>
+                    </button>
+                </div>
+             
+
+            </div>
+            --->
+            <!--COntext--->
+            <ul id="ul-dynamic-itemholder" class="todo-dynamic-main-context">
+                
+                
+
+                
+            </ul>
+            
+            
+            
+            <!------Bottom Textox-->
+            <div class="bottom-todo ">
+                <input class="no-style-textbox txt-new-todo" id="todo-txt-newTodo" type="text" placeholder="New Todo"/>
+            </div>
+            
+
+
+        </div>
+        <div >
+           
+        </div>
+        <template  data-popover="my-popover">
+            <ul class="" >
+                <li>Inbox2</li>
+                <li>Today</li>
+                <li>Done</li>
+                <li>+New List</li>
+            </ul>
+        </template>
+        <div class="tdp_triangle"> 
+
+        </div>
+    </div>    
+    
+    
+
+
+
+</body>
+</html>

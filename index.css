@@ -1,0 +1,855 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+    
+}
+
+#wrapper{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+
+.content{
+    color: #FFFFFF;
+    font-size: 26px;
+    font-weight: bold;
+    text-shadow: -1px -1px 1px #000, 1px 1px 1px #000;
+    position: relative;
+    z-index: 100;
+}
+
+.background{
+    color: #999999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+#search-section{
+    
+    margin: 0;
+    padding: 1em;
+    overflow: hidden;
+    float: left;
+    
+}
+.horizental-Items {
+    float: left;
+    padding-inline: 1mm;
+   
+}
+.header{
+    height: 60px;
+    position: fixed;
+    
+    width: 100%;
+}
+
+
+
+
+.no-margin{
+    padding: 0;
+    margin: 0;
+}
+.margin-right-1{
+    padding: 0;
+    margin: 1ch;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+.header-ul{
+    height: 60px;
+}
+
+#weather-section{
+    
+    right: 0;
+    position: absolute;
+
+}
+
+
+
+
+/* inner section 
+display: table;
+    width: 100%;
+    
+    */
+
+input[type=text]{
+    
+    outline:none;
+}
+
+
+
+
+#inner-section{
+    
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    float: bottom;
+
+
+}
+#empty-ineer-sec{
+    height:30%;
+
+
+}
+.inner-Item{
+    display: grid;
+    
+    
+
+}
+#clock-section{
+    height: 120px;
+    
+    padding: 0;
+    display: inline;
+    margin-inline: auto;
+    position: relative;
+    
+    
+}
+.grid-3col{
+    display: grid;
+    
+    grid-template-columns: 20px auto 20px;
+}
+.clock-icon{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 21px;
+    
+}
+
+
+.clock-icon i{
+
+    color: #727272;
+
+}
+.clock-icon i:hover{
+    width: 22px;
+    height: 22px;
+    padding: 4px;
+    opacity: 0.9;
+    background-color: rgb(193, 193, 193);
+    color: #e1e1e1;
+    border-radius: 15px;
+}
+
+
+
+.clock-section-Items{
+    float:left;
+    padding: 1em;
+
+
+
+}
+
+
+#morning-section{
+    
+}
+.central-Items{
+    margin-inline: auto;
+    margin-block: 1em;
+    padding: 1mm;
+}
+#main-focus-text{
+    
+    
+    
+    text-align: center;
+}
+#clock-num{
+    padding:0;
+    margin :0;
+    font-size: 120px;
+}
+.Clock{
+    
+    padding: 0;
+    margin: 0;
+}
+
+#mantra-section{
+    font-size: 1cm;
+    padding: 0;
+    margin-top: 2mm;
+    margin-bottom: 1mm;
+}
+#main-focus-sec{
+    font-size: 28px;
+    padding: 0px;
+    margin-top: 0;
+}
+.main-focus-text{
+    padding: 0;
+    margin-top: 2mm;
+    margin-bottom: 2mm;
+}
+#mft-txt{
+    width: 100%;
+    margin-inline: 3px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    margin-top: 2px;
+    padding-top: 2px;
+    font-size: 25px;
+    text-align: center;
+
+}
+
+.footer-section{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+
+    margin-bottom:-16px;
+}
+.todo-section{
+    position: absolute;
+    right: 28px;
+
+}
+
+.btn{
+    font-size:17px;
+    background: none;
+    border : none;
+}
+
+.todo-btn{
+    margin-top:7px;
+    
+}
+
+/*-------------------------------------------Todo Popover Styles------------------------------*/
+
+.tdp_triangle{
+    
+    margin-right: 25px;
+    margin-top: 0.5px;
+    bottom: 0;
+    float: right;
+    width:1px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 1px solid rgb(0, 0, 0);
+    border-width:6px;
+    
+}
+.todo-btn:hover{
+    color: #424242;
+}
+
+.todo_popover{
+    position: absolute;
+    right: 12px;
+    bottom: 50px;
+    z-index: 1;
+}
+
+
+.tdp_item_holder{
+    
+    width: 320px;
+    min-height:99px;
+    background-color: rgb(223, 220, 220);
+    z-index: 1;
+    border-radius: 7px;
+    
+}
+
+.popover-header{
+    height:55px;
+    width: 100%;
+    
+    border-radius: 7px;
+
+}
+
+.popover22{
+    position: absolute;
+    right: 100;
+    left: 10000;
+    bottom: 0;
+    top: 0;
+    background-color:rgb(196, 32, 179);
+}
+
+
+.left-top-form{
+    margin-top:2px;
+    
+    float: left;
+}
+.btn-no-style{
+    background: none;
+    border: none;
+
+}
+.Item-list-btn-text{
+    float :left;
+    
+}
+.Item-list-btn-text{
+    
+    margin-top: 15px;
+    margin-left: 3px;
+
+}
+.todo-tl-btn{
+    
+    width:282px;
+    font-weight: bold;
+    font-size: 18px;
+    
+    
+}
+#todo-popover-tl-arrow{
+    border-radius: 127px;
+    position: absolute;
+    margin-top: 0px;
+    width: 20px;
+    height: 18px;
+    
+    
+}
+.tr-btn:hover{
+    background-color: red;
+}
+.tr-btn{
+    margin-top:14px;
+    width: 24px;
+    height: 24px;
+    padding-top:5px;
+    border-radius: 15px;
+}
+.rt-todo-form{
+    float: left;
+    width: 38px;
+    margin-left:0px;
+    padding-left: 0;
+
+
+}
+
+.no-style-textbox{
+    background: none;
+    border :none;
+
+
+
+
+
+}
+.bottom-todo{
+    margin-top: 5px;
+    position: relative;
+    float: bottom;
+    width: 100%;
+    height: 44.4px;
+    bottom:8px;
+    
+}
+
+.txt-new-todo{
+    width: 93%;
+    height: 40px;
+    margin-inline: 12px;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+
+.todo-main{
+    width: 320px;
+    height: 150px;
+}
+.todo-center-item{
+    width: 100%;
+    margin-inline: auto;
+    
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.todo-nextoption-btn{
+    padding:0px;
+    height: 20.8px;
+    background:none;
+    margin-bottom: 2px;
+}
+.todo-btn-inner{
+    padding: 0px;
+    margin: 0px;
+}
+.todo-btn-get-start{
+    color: #575757;
+}
+.todo-btn-get-start:hover{
+    color: #171515;
+}
+
+.todo-btn-New{
+    border: none;
+    width:116.1px ;
+    height: 31.8px;
+    background-color:rgb(67, 130, 67);
+    border-radius: 15px;
+}   
+.todo-context{
+    
+    
+}
+.todo-btn-inner-newTodo{
+    color: #FFFFFF;
+    
+}
+.todo-btn-New:hover{
+    background-color:rgb(94, 138, 94);
+}
+
+    
+.todo-context-checkbox{
+    top: 0;
+    padding-top: 0;
+    margin-right: 5px;
+    margin-top: 0px;
+    background-color: red;
+}
+.three-dots-todo-context{
+    position: absolute;
+    right: 0;
+    margin: 0;
+    visibility: hidden;
+    margin-right: 22px;
+    margin-top: -1px;
+    border-radius: 15px;
+}
+.three-dots-todo-context:hover{
+    background-color: rgb(194, 194, 194);
+}
+.floatleft{
+    float: left;
+    
+}
+
+
+.todo-li{
+    display: inline-flex;
+    position:relative ;
+    
+    height: max-content;
+    width: 100%;
+    
+    margin-bottom: 5px;
+}
+.todo-dynamic-main-context{
+    max-height: 460px;
+    height: max-content;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-left: 8px;
+    
+}
+/*-------------------------------------------Todo Popover Styles------------------------------*/
+/*--------------------------------component(todo textes)--------------------------------*/
+
+
+.item-holder{
+    display: grid;
+    grid-template-columns: 21px auto 21px;
+    width: 300px;
+    
+    padding: 0;
+    margin: 0;
+    
+}
+.li-dynamic-item-holder{
+    position: relative;
+    height: fit-content;
+    min-height: 24px;
+}
+
+.todo-context-checkbox{
+    
+    top: 8px;
+    
+    margin-right: 5px;
+    
+    
+}
+.todo-context-p{
+    position: absolute;
+    padding: 0;
+    
+    height: 24px;
+    margin: 0;
+    margin-left: 1px;
+    margin-top: -4px;
+    width: 24px;
+    word-break: break-all ;
+    display: contents;
+    color: #000000;
+    background-color: rgb(100, 237, 100);
+}
+.three-dots-todo-context{
+    
+    right: 0;
+    margin: 0;
+    visibility: hidden;
+    
+    margin-top: -1px;
+    border-radius: 6px;
+    margin-left: -2px;
+}
+
+.three-dots-todo-context:hover{
+    background-color: rgb(194, 194, 194);
+}
+.floatleft{
+    float: left;
+    
+}
+
+
+
+/*--------------------------------Setting-----------------*/
+
+.settings-div{
+    display: grid;
+    grid-template-columns: 60px 220px;
+    width: 350px;
+    
+}
+.picture-name{
+    position: absolute;
+    
+    font-size: 13px;
+    bottom: 5px;
+}
+.settings-items{
+    margin-left:18px;
+}
+
+
+.settings-div button{
+    color: #aeaeae;
+}
+
+.settings-div button:hover{
+    color: #cfcfcf;
+    
+}
+
+.setting-context{
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: 18px;
+    color: #aeaeae;
+}
+
+.picture-deatil{
+    margin-bottom: 15px;
+    float: left;
+}
+.picture-owner i {
+    margin-left: 4px;
+}
+.picture-owner{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: absolute;
+    float: left;    
+    place-items: center;
+    bottom: 5px;
+    opacity: 0;
+}
+
+
+
+
+
+
+.stp_triangle{
+    position: absolute;
+    bottom: 42px;
+    left: 30px;
+    margin-right: 25px;
+    margin-top: 0.5px;
+    float: right;
+    width:1px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-top: 1px solid rgb(0, 0, 0);
+    border-width:6px;
+    
+}
+
+
+
+
+
+
+
+
+.up-going-motion:hover{
+    animation-name: going-up-motion;
+    animation-duration: 1000ms;
+
+}
+
+@keyframes going-up-motion {
+    from {bottom:5px; }
+    to{bottom: 10px }
+}
+
+.down-going-motion:hover{
+    animation-name: going-down-motion;
+    animation-duration: 1000ms;
+}
+
+@keyframes going-down-motion {
+    from {bottom:5px; opacity:0}
+    to{bottom:0px; opacity:1}
+}
+
+
+/*--------------------------------Setting-----------------*/
+/*---------------------   Setting Popover ---------------------*/ 
+
+.Setting-form-container{
+    
+    
+    position: absolute;
+    width: 684px;
+    height:450px;
+    bottom: 49px;
+    left: 10px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    display: grid;
+    grid-template-columns: 177px 507px;
+    border-radius: 5px;
+    -webkit-box-shadow: -2px -1px 15px 7px rgba(0,0,0,0.5);
+    -moz-box-shadow: -3px -2px 30px 14px rgba(0,0,0,0.425);
+    box-shadow: -4px -3px 45px 21px rgba(0,0,0,0.35);
+
+}
+.setting-popover{
+    visibility: hidden;
+    opacity: 0;
+}
+.setting-titles-holder{
+    
+    border-right: 10px;
+    border-color: rgb(255, 255, 255);
+    border-style:solid ;
+    border-color: rgb(86, 86, 86);
+    border-width: 0  1px 0 0;
+
+}
+.setting-titles-holder li{
+    height: 29px;
+    
+}
+button{
+  cursor: pointer;
+}
+.setting-title{
+    padding-top:0 ;
+    margin-top: 0;
+    float :left;
+    position: absolute;
+    left: 18px;
+    
+
+}
+
+.setting-title-button{
+    background:none;
+    color: rgb(155, 154, 154);
+    padding-top:0 ;
+    margin-top: 0;
+    
+    font-size:14px;
+    
+    border: none;
+}
+.setting-title-button:hover{
+
+    color: rgb(255, 255, 255);
+    
+}
+.bold{
+    font-weight: bold;
+}
+
+
+/*-------------------------Setting Details-----------------*/
+
+.setting-items-details-holder ul{
+    color: rgb(228, 228, 228);
+    list-style: none;
+    
+    
+}
+
+.layer-1{
+    padding-left:20px ;
+    margin-top: 28px;
+}
+.layer-2{
+    
+    margin-left:5px;
+    padding-left: 0;
+}
+
+
+
+
+.layer-2 button{
+    background : none;
+    border: none;
+    color: rgb(214, 214, 214);
+    width: 447px;
+    height: 41px;
+    
+}
+.layer-2 button p{
+    float: left;
+}
+.layer-2 button:hover{
+    color: white;
+    background-color: rgb(14, 14, 14);
+}
+
+/*---------------- Toggle Button----------------*/
+.switch {
+    
+  position: relative;
+  padding: 0px;
+  margin-top: 9px;
+  width: 33px;
+  height: 20px;
+  float : right;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  bottom: 2.8px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+/*---------------------   Setting Popover ---------------------*/ 
+
+/*--------------------------------webkit--------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }    
+    
+
+
+
+

@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "feather-icons": "^4.29.1"
+  }
+  
+}

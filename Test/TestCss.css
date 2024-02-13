@@ -1,0 +1,28 @@
+.main{
+    width: 80px;
+    height:40px;
+
+}
+.main input{
+    opacity: 0;
+}
+.slider{
+    position: absolute;
+    background-color:red;
+    -wekit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before{
+    
+}
+
+
+
+
+
+
+
+
+
+

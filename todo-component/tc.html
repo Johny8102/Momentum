@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="tc.js" type="text/javascript" defer></script> 
+    <link rel="stylesheet" href="./tc.css">
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Document</title>
+
+</head>
+<body>
+   
+
+    <div class="todo_popover" >
+        <div class="tdp_item_holder"> 
+            <div class="popover-header">
+                <div class="left-top-form">
+                    <button id="all-todos-presenter"   class="btn-no-style todo-tl-btn">
+                        <p class="Item-list-btn-text">Today</p>
+                        <div class="Item-list-btn-text">
+                            <i id="todo-popover-tl-arrow" style="padding-top:1px;" class="bi bi-chevron-compact-down arrow-icon"></i>
+                    
+                        </div>
+                    </button>
+                    
+                    
+                    
+                </div>
+                <div class="rt-todo-form" >
+                    <button data-popover-target="my-popover" class="btn-no-style tr-btn" >
+                        <i class="bi bi-three-dots"></i>
+
+                    </button>
+                    
+                    
+                    
+                </div>
+                
+            </div>
+            <!----Default Content-->
+            <ul id="all-todos" class="todos-headers-pop popovers" >
+                <li class="popover-item">Inbox2</li>
+                <li class="popover-item">Today</li>
+                <li class="popover-item">Done</li>
+                <li class="popover-item">+New List</li>
+            </ul>
+            
+            <!------ 
+            <div  class="todo-main">
+                <div class="todo-main-item-holders ">
+
+                </div>
+                <p class="todo-center-item todo-main-item">No compeleted todos yet</p>
+                <button class="todo-center-item btn-no-style todo-main-item todo-nextoption-btn">
+                    <p class="todo-btn-inner todo-btn-get-start">Get Started in Today</p>
+                </button>
+                <div class="todo-center-item todo-main-item">
+                    <button class=" todo-btn-New ">
+                        <p  class="todo-btn-inner todo-btn-inner-newTodo">New Todo</p>
+                    </button>
+                </div>
+             
+
+            </div>
+            --->
+            <!--COntext--->
+            <ul id="ul-dynamic-itemholder" class="todo-dynamic-main-context">
+                <li class="li-dynamic-item-holder" >
+                    <div class="item-holder" onmouseover="todo_context_mouseover()" onmouseleave="todo_context_mouseleave()">
+                
+                        <div>
+                            <input type="checkbox"  id="todo-check" class="floatleft todo-context-checkbox"/>
+                        </div>
+                           
+                        <p id="todo-txt" class="todo-context-p " > aazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzza aa </p>
+                
+                        <div style="background-color: red;">
+                            <button onclick="dynamic_items_pop()" class="no-style-textbox">
+                                <i class="bi bi-three-dots three-dots-todo-context"  id="todo-three-dots"></i>
+                            </button>
+                
+                            <ul id="all-todos" class="dynamic-todo-pop popovers" >
+                                <li class="popover-item">Delete</li>
+                                <li class="popover-item">Move to Today</li>
+                                <li class="popover-item">Edit</li>
+                            </ul>
+                        </div>
+                        
+                        <!--popover-->
+                        
+                        
+                
+                
+                    </div>
+                </li>            
+                <li class="li-todo">
+                    <div class="item-holder" onmouseover="todo_context_mouseover()" onmouseleave="todo_context_mouseleave()">
+                
+                        <div>
+                            <input type="checkbox"  id="todo-check" class="floatleft todo-context-checkbox"/>
+                        </div>
+                           
+                        <p id="todo-txt" class="todo-context-p " > aaa aa </p>
+                
+                        <div style="background-color: red;">
+                            <button onclick="dynamic_items_pop()" class="no-style-textbox">
+                                <i class="bi bi-three-dots three-dots-todo-context"  id="todo-three-dots"></i>
+                            </button>
+                
+                            <ul id="all-todos" class="dynamic-todo-pop popovers" >
+                                <li class="popover-item">Delete</li>
+                                <li class="popover-item">Move to Today</li>
+                                <li class="popover-item">Edit</li>
+                            </ul>
+                        </div>
+                        
+                        <!--popover-->
+                        
+                        
+                
+                
+                    </div>
+                </li>              
+        
+                        
+            </ul>
+            
+            
+            
+            <!------Bottom Textox-->
+            <div class="bottom-todo ">
+                <input class="no-style-textbox txt-new-todo" id="todo-txt-newTodo" type="text" placeholder="New Todo"/>
+            </div>
+            
+
+
+        </div>
+        <div >
+           
+        </div>
+        <template  data-popover="my-popover">
+            <ul class="" >
+                <li>Inbox2</li>
+                <li>Today</li>
+                <li>Done</li>
+                <li>+New List</li>
+            </ul>
+        </template>
+        <div class="tdp_triangle"> 
+
+        </div>
+    </div>  
+        
+    
+
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 0;
+
+}
+
+
+.Setting-form-container{
+    position: absolute;
+    width: 684px;
+    height:450px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    display: grid;
+    grid-template-columns: 177px 507px;
+    border-radius: 4px;
+}
+.setting-titles-holder{
+    
+    border-right: 10px;
+    border-color: rgb(255, 255, 255);
+    border-style:solid ;
+    border-color: rgb(86, 86, 86);
+    border-width: 0  1px 0 0;
+
+}
+.setting-titles-holder li{
+    height: 29px;
+    
+}
+button{
+  cursor: pointer;
+}
+.setting-title{
+    padding-top:0 ;
+    margin-top: 0;
+    float :left;
+    position: absolute;
+    left: 18px;
+    
+
+}
+
+.setting-title-button{
+    background:none;
+    color: rgb(155, 154, 154);
+    padding-top:0 ;
+    margin-top: 0;
+    
+    font-size:14px;
+    
+    border: none;
+}
+.setting-title-button:hover{
+
+    color: rgb(255, 255, 255);
+    
+}
+.bold{
+    font-weight: bold;
+}
+
+
+/*-------------------------Setting Details-----------------*/
+
+.setting-items-details-holder ul{
+    color: rgb(228, 228, 228);
+    list-style: none;
+    
+    
+}
+
+.layer-1{
+    padding-left:20px ;
+    margin-top: 28px;
+}
+.layer-2{
+    
+    margin-left:5px;
+    padding-left: 0;
+}
+
+
+
+
+.layer-2 button{
+    background : none;
+    border: none;
+    color: rgb(214, 214, 214);
+    width: 447px;
+    height: 41px;
+    
+}
+.layer-2 button p{
+    float: left;
+}
+.layer-2 button:hover{
+    color: white;
+    background-color: rgb(14, 14, 14);
+}
+
+/*---------------- Toggle Button----------------*/
+.switch {
+    
+  position: relative;
+  padding: 0px;
+  margin-top: 9px;
+  width: 33px;
+  height: 20px;
+  float : right;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 3px;
+  bottom: 2.8px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
