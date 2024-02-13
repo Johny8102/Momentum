@@ -25,10 +25,7 @@ let ip_address;
 
 
 
-ip_address = fetch('https://api.ipify.org/?format=json')
-.then(res => res.json()).then(data=>fill_ip(data.ip) )
 
-console.log(ip_address.ip)
 
 function ss(){
   hideSearch();
